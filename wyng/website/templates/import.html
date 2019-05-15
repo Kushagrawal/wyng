@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form method="post" action="/fileup/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Person Upload</button>
+  </form>
+
+
+    <form method="post" action="/whsstg/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Warehouse Storage Upload</button>
+  </form>
+
+    <form method="post" action="/prodmst/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Product Master Upload</button>
+  </form>
+
+
+    <form method="post" action="/stgmst/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Storage Master Upload</button>
+  </form>
+
+
+    <form method="post" action="/stginv/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Storage Inventory Upload</button>
+  </form>
+
+    <form method="post" action="/whsinv/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Warehouse Inventory Upload</button>
+  </form>
+
+
+    <form method="post" action="/whsmst/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Warehouse Master Upload</button>
+  </form>
+
+
+    <form method="post" action="/exportrepl/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <button type="submit">Export Replenishment</button>
+  </form>
+
+    <form method="post" action="/exportreqd/" role="form" enctype="multipart/form-data">{% csrf_token %}
+    <button type="submit">Export</button>
+  </form>
+
+
+
+{% endblock %}
